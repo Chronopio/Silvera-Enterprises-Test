@@ -1,0 +1,318 @@
+/* Resets */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+w-80 {
+    width: 80%;
+}
+
+span.orange-text {
+    color: #e75929;
+}
+
+span.white-text {
+    color: #fff;
+}
+
+ul {
+    list-style: none
+}
+
+ul a {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn-marine {
+    background-color: #373d50;
+    color: #fff;
+    align-self: center;
+}
+
+@media screen and (max-width: 575px) {
+    .about-wrapper, .service-wrapper, .product-wrapper, .testimonial-wrapper  {
+        width: 100% !important;
+    }
+}
+
+/* Header CSS */
+.header-area .info-area {
+    background-color: #091126;
+}
+@media screen and (max-width: 767px) {
+    .header-area .info-items-1, .header-area .info-items-2 {
+        flex-direction: column;
+    }
+}
+
+.header-area .navbar-area {
+    background-color: #fff;
+}
+
+.header-area li.active {
+    color: #e75929;
+    border-bottom: 2px solid #e75929;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 767px) {
+    .nav-links {
+        flex-direction: column;
+    }
+}
+
+.video-area {
+    background: rgba(10,18,39,0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+.video-area #video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-area #video-bg { 
+        width:auto;
+        height: 100%;
+    }
+}
+
+.video-area h1 {
+    font-weight: 900;
+}
+
+.video-area hr {
+    color: #e75929;
+    width: 10%;
+    height: 5px;
+    opacity: 1;
+}
+
+.video-area .form-input {
+    background-color: #dbdbdd;
+}
+@media screen and (max-width: 767px) {
+    .video-area .form-input {
+        margin-top: 2rem;
+
+    }
+}
+@media screen and (max-width: 575px) {
+    .video-area .form-input {
+       width: 90% !important;
+
+    }
+}
+
+.form-control, .form-control:focus, .form-select, form-select:focus {
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #a8a7a7;
+    border-radius: 0;
+}
+
+.form-input input::placeholder, .form-input textarea::placeholder{
+    color: #000
+}
+
+.form-input button {
+    background-color: #2f374c;
+}
+
+/* About CSS */
+
+.about-area h6.subtitle {
+    font-size: 0.75rem;
+}
+
+.about-area h2 {
+    color: #1c233e;
+    font-weight: 700;
+}
+
+.about-area .image-wrapper {
+    position: relative;
+}
+
+.image-wrapper .orange-box {
+    width: 50px;
+    height: 75px;
+    position: absolute;
+    top: 40%;
+    right: -10px;
+    background-color: #e75929;
+}
+
+.image-wrapper .orange-triangle {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-top: 80px solid #e75929;
+    border-right: 80px solid transparent;
+}
+
+/* Service CSs */
+
+.service-area .btn-outline-danger {
+    border-color: #e75929;
+    color: #373d50;
+}
+
+.service-area .btn-check:checked+.btn-outline-danger {
+    background-color: #e75929;
+    border-color: #e75929;
+}
+
+.service-area .card-grey {
+    background-color: #ececec;
+}
+
+.service-area .card-orange {
+    background-color: #e75929;
+}
+
+.service-area .card-marine {
+    background-color: #040e27;
+}
+
+.service-area .card-grey, .service-area .card-orange, .service-area .card-marine  {
+    position: relative;
+}
+@media screen and (max-width: 575px) {
+    .service-area .card-grey, .service-area .card-orange, .service-area .card-marine  {
+        width: 100% !important;
+    }
+}
+
+.service-area .icon-wrapper {
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    z-index: 1;
+}
+
+.paint-orange {
+    color: #e75929;
+}
+
+@media screen and (max-width: 575px) {
+    .service-area .btn-group {
+       display: flex;
+       flex-direction: column;
+    }
+
+}
+
+
+/* Product CSS */
+
+.product-area {
+    background-color: #1e263b;
+}
+
+.image-wrapper img {
+    width: 20%;
+}
+@media screen and (max-width: 575px) {
+    .image-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-wrapper img {
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    .product-wrapper .btn-marine {
+        width: 50% !important;
+    }
+
+}
+
+/* Testimonials CSS */
+
+.testimonial-area {
+    background-color:#f8f9fb;
+}
+
+.testimonial-wrapper {
+    background: url('/assets/img/bg_1.jpg');
+    background-size: cover;
+    background-position: center top;
+    box-shadow: inset 0 0 0 100vmax rgba(10,18,39,0.8);
+}
+
+.testimonial-video-wrapper {
+    position: relative;
+}
+
+.testimonial-video {
+    width: 100%;
+    height: auto;
+}
+
+.play-button {
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#e75929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Subscribe CSS */
+
+.subscribe-area .bg-orange {
+    background-color: #e75929
+}
+
+.subscribe-area form input[type="text"] {
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #e75929;
+}
+
+/* Footer CSS */
+
+.footer-area {
+    background-color: #061437;
+}
+
+.footer-area hr {
+    height: 3px;
+    width: 15%;
+    background-color:#e75929;
+    opacity: 1;
+}
+
+.copyright {
+    background-color: #040e27;
+}
+
+.copy-link {
+    color: lightblue;
+}
